@@ -100,7 +100,7 @@ through four tasks to program your micro:bits.
 
 **Description:** We have created a video to show how your connections
 and program should work in this activity.
-See the video at ![Simple Heart Transfer](https://microbit.nominetresearch.uk/networking-book/simple_heart_transfer.html).
+See the video at [Simple Heart Transfer](https://microbit.nominetresearch.uk/networking-book/simple_heart_transfer.html).
 
 **Instruction:** Watch the Simple Heart Transfer in the video.
 
@@ -214,4 +214,4 @@ Resources
 
 [^1]: This image is by micro:bit Educational Foundation at [www.microbit.org](www.microbit.org).
 
-[^2]: <https://www.microbit.co.uk/td/lessons/telegraph/activity>  
+[^2]: Microbit telegraph activity <https://www.microbit.co.uk/td/lessons/telegraph/activity>  
