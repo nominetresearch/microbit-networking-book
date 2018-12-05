@@ -20,6 +20,19 @@ However, we assume that you have written programs with a micro:bit. For example,
 you are familiar with variables, if-then-else statements, and loops. The activities in each chapter will
 provide ample opportunity to put this knowledge into practice.
 
+
+About the authors
+-----------------
+
+We are researchers, which means we work on new ideas and products. Our company Nominet runs the part of the Internet that controls how names (like
+[http://www.bbc.co.uk)](http://www.bbc.co.uk)) are used when people, computers, or devices like tablets or smartphones connect to
+other computers over the Internet. We’re very excited to have the opportunity to work with micro:bits
+and the Micro:bit Foundation.
+Understanding how computers talk to each other is something that we think is important, which is why
+we wrote this book! We’ve enjoyed designing the tasks and challenges in the book, and we hope you
+do too.
+Anthony & Cigdem
+
 Outline 
 -------
 
