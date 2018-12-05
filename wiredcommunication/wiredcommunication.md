@@ -1,6 +1,8 @@
 Communication over Wires
 ========================
 
+![Chapter 1 image](chapter1.png)
+
 Introduction
 ------------
 
