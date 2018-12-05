@@ -10,11 +10,11 @@ To network micro:bits, we use custom micro:bit radio to radio communication. Whe
 word radio, what comes to mind is the radio that blasts out tunes from your favourite radio broadcasting
 channel. But, a radio, or a radio transceiver (transmitter/receiver), is used in communications to
 generate and receive radio waves that contain information such as audio, video or digital data. And
-all micro:bits have built-in radios^1.
+all micro:bits have built-in radios[^1].
 Each chapter presents interesting challenges in radio communications and networking with micro:bits.
 After every few chapters, there’s an exciting game to look forward to! In the programming sections,
 you will use the JavaScript Blocks Editor at https://makecode.microbit.org/ to develop solutions to
-overcome those challenges^2.
+overcome those challenges[^2].
 Writing this book, we have assumed no knowledge of radio communications or networking.
 However, we assume that you have written programs with a micro:bit. For example, we expect that
 you are familiar with variables, if-then-else statements, and loops. The activities in each chapter will
