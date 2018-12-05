@@ -1,6 +1,8 @@
 Preface
 =======
 
+![Cover image](cover.png)
+
 About the book
 ------------------------------------
 
