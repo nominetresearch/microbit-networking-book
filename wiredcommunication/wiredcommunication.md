@@ -12,11 +12,11 @@ your micro:bit. More and more, the Internet is becoming an *Internet of Things*.
 In this chapter, you will form your own network using wires to
 connect two micro:bits. Doing this, you will learn:
 
--the concept of a *communications medium*, and *signals*
+- the concept of a *communications medium*, and *signals*
 
--the concept of *binary* and *bit*
+- the concept of *binary* and *bit*
 
--the concept of a *network*
+- the concept of a *network*
 
 ### What you’ll need?
 
@@ -153,11 +153,11 @@ when the heart icon is displayed.
 similar behaviour to what you observed in the Tasks 2 and 3. To do this
 task, you will need to think about the following questions:
 
-1.Which input will the micro:bits react to in your program?
+1. Which input will the micro:bits react to in your program?
 
-2.How do the microbits send data to each other?
+2. How do the microbits send data to each other?
 
-3.**Hint: Do you think they are sending each other an actual Heart
+3. **Hint: Do you think they are sending each other an actual Heart
     icon?**
 
 **Instruction:** For question 1, look at the options under the JavaScript Blocks editor  *Input*
@@ -167,20 +167,20 @@ from micro:bit 1.**
 
 Program your micro:bit 1 so that:
 
-1.It displays a heart icon until it is tilted over micro:bit 2.
+1. It displays a heart icon until it is tilted over micro:bit 2.
 
-2.When tilted over micro:bit 2, it sends a pulse to micro:bit 2 over
+2. When tilted over micro:bit 2, it sends a pulse to micro:bit 2 over
     the correct pin.
 
-3.When micro:bit 1 receives a pulse on its correct pin, it displays a
+3. When micro:bit 1 receives a pulse on its correct pin, it displays a
     heart icon .
 
 Program your micro:bit 2 so that:
 
-1.It displays a heart icon when it receives a pulse on its
+1. It displays a heart icon when it receives a pulse on its
     correct pin.
 
-2.When tilted over micro:bit 1, it sends a pulse to micro:bit 2 over
+2. When tilted over micro:bit 1, it sends a pulse to micro:bit 2 over
     the correct pin.
 
 Extended activity
@@ -206,11 +206,11 @@ Problems
 Resources
 ---------
 
--Video: What is the Internet (Code.org) -   <https://youtu.be/Dxcc6ycZ73M>
+- Video: What is the Internet (Code.org) -   <https://youtu.be/Dxcc6ycZ73M>
 
--Video: The Internet: Wires, Cables and Wifi (Code.org) - <https://youtu.be/ZhEf7e4kopM>
+- Video: The Internet: Wires, Cables and Wifi (Code.org) - <https://youtu.be/ZhEf7e4kopM>
 
--BBC Bitesize, Introducing Binary - <http://www.bbc.co.uk/education/guides/zwsbwmn/revision>
+- BBC Bitesize, Introducing Binary - <http://www.bbc.co.uk/education/guides/zwsbwmn/revision>
 
 [^1]: This image is by micro:bit Educational Foundation at [www.microbit.org](www.microbit.org).
 
