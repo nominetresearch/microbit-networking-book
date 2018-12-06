@@ -1,4 +1,4 @@
-Group communication: One to Many 
+Group communication: One to Many
 ================================
 
 ![Chapter 3 image](chapter3.png)
