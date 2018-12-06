@@ -68,7 +68,7 @@ learned that radio waves are essentially electromagnetic waves.
 Scientists have found that electromagnetic waves can be arranged
 together on a scale called electromagnetic spectrum. The figure below
 shows the electromagnetic spectrum, and the different electromagnetic
-waves [^1].
+waves.
 
 ![Electromagnetic spectrum](EM.png)
 
@@ -92,7 +92,7 @@ In addition to frequency, another important parameter of electromagnetic
 waves is wavelength. The wavelength of a wave is the distance between a
 point on the wave and the same point on the next wave. The unit of
 wavelength is meters. The figure below shows an example of a
-wavelength[^2].
+wavelength[^1].
 
 ![Wavelength](wavelength.png)
 
@@ -220,13 +220,8 @@ Resources
 -   Wired, Why Everything Wireless is 2.4GHz?-\
     <https://www.wired.com/2010/09/wireless-explainer/>
 
-[^1]: The image is by Inductiveload -
-    <http://commons.wikimedia.org/wiki/File:EM_Spectrum_Properties.svg>,
-    CC BY-SA 3.0,
-    <https://commons.wikimedia.org/w/index.php?curid=24646522>
-
-[^2]: Image by Dicklyon (Richard F. Lyon) - Own work, CC BY-SA 3.0,
+[^1]: Image by Dicklyon (Richard F. Lyon) - Own work, CC BY-SA 3.0,
     <https://commons.wikimedia.org/w/index.php?curid=7184592>
 
-[^3]: If you are using your own programs to send a broadcast, you can
+[^2]: If you are using your own programs to send a broadcast, you can
     select the group ID as you like.
