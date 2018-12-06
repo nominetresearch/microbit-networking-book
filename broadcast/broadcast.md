@@ -185,7 +185,7 @@ block. You will notice that the original “on radio received” block will
 extend to show these additional values.
 The figure below shows how the trick works.
 
-![Making micro:bit radio to receive either a string or a number.](advancedradio.png)
+![Making micro:bit radio to receive either a string or a number.](advanced_radio.png)
 
 Extended activity
 -----------------
