@@ -7,7 +7,7 @@ Introduction
 ------------
 
 Wireless (radio) communication, for example WiFi and mobile phones, is a
-popular way to connect to the Internet. In [Communication over Wires](../../chapter_01), you
+popular way to connect to the Internet. In [Communication over Wires](../wiredcommunication), you
 connected two micro:bits via wires. In this chapter, you will connect
 your micro:bits using radios.
 
