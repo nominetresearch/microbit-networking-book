@@ -39,7 +39,7 @@ other is saying!
 
 Another reason for a wireless error may be *radio interference*. This is
 because wireless communication is broadcast (remember
-[Communication over Wires](../broadcast)). This means that there may be many
+[Wireless and Broadcast Communication](../broadcast)). This means that there may be many
 broadcasters, and their transmissions may collide at the receivers.
 These broadcasters *interfere* with each other.
 
