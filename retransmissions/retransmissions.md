@@ -228,22 +228,9 @@ Problems
 
 3. If the packet error rate is 20% and the sender sent 40 packets, how many packets had errors?
 
-4. Assume you do not know how many numbers that will be in the message sequence. But, you know the numbers will start from 1, and will increment by 1. For example, the sent message sequence may be:
+4. Assume you do not know how many numbers that will be in the message sequence. But, you know the numbers will start from 1, and will increment by 1. For example, the sent message sequence may be: *Start 1 2 3 4 5 6 7 8 9 10 11 12 End*. What happens if you lose *Start* or *End* messages? Which one is worse: the loss of *Start* or *End* message? If the only message you receive is a 4, what can you say about the number of messages you lost?
 
-      Start 1 2 3 4 5 6 7 8 9 10 11 12 End
-
-What happens if you lose *Start* or *End* messages? Which one is worse:
-the loss of *Start* or *End* message? If the only message you receive is
-a 4, what can you say about the number of messages you lost?
-
-5.Assume you do not know how many numbers that will be in the message sequence. And they do not follow any order. For example, the sent message sequence may be:
-
-      Start 3 5 10 2 End
-
-What happens if you lose *Start* or *End* messages in the sequence?
-Which one is worse: the loss of *Start* or *End* message? If the only
-message you receive is a 5, what can you say about the number of
-messages you lost?
+5. Assume you do not know how many numbers that will be in the message sequence. And they do not follow any order. For example, the sent message sequence may be: *Start 3 5 10 2 End*. What happens if you lose *Start* or *End* messages in the sequence Which one is worse: the loss of *Start* or *End* message? If the only message you receive is a 5, what can you say about the number of messages you lost?
 
 Resources
 ---------
