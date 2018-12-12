@@ -78,7 +78,7 @@ paper like the children who played the game in earlier times?
 column number to fire a shot. Note
 that when LED’s coordinates are given as *(x,y)*, x is column number, and
 y is the row number. For more information, see  
-[https://www.microbit.co.uk/device/screen](https://www.microbit.co.uk/device/screen).
+[https://microbit.org/guide/hardware/leds/](https://microbit.org/guide/hardware/leds/).
 
 ![Battleship in micro:bit.](Battleship_microbit.png)
 

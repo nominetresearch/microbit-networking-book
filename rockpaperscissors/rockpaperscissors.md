@@ -50,9 +50,9 @@ this game over the radio.
 ### Task 1: Start with the simple game
 
 **Description:** To familiarize yourself with the game, try the
-[Rock-Paper-Scissors activity](https://www.microbit.co.uk/blocks/lessons/rock-paper-scissors/activity).
+[Rock-Paper-Scissors activity](https://makecode.microbit.org/projects/rock-paper-scissors).
 Notice that the program gives a number to *rock*, *paper* and
-*scissors*. For example, paper=0, rock=1, and scissors=2.
+*scissors*. For example, paper=1, rock=2, and scissors=3.
 
 **Instruction:** Program the code shown on the Rock-Paper-Scissors
 activity page, and download it to your micro:bits. Play the game with a
