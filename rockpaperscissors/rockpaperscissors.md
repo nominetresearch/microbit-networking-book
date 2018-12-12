@@ -21,7 +21,7 @@ they use these rules to decide who wins:
 
 Figure below shows these rules.
 
-![Rock paper scissors game: Rock beats Scissors. Scissors beats Paper. Paper beats Rock.](Rock-paper-scissors.png)
+![Rock paper scissors game: Rock beats Scissors. Scissors beats Paper. Paper beats Rock.](Rock-paper-scissors.jpg)
 
 In this chapter, you will program this game using your micro:bits. Doing
 so, you will practice:
