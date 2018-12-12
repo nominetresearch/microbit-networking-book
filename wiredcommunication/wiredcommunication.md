@@ -216,4 +216,4 @@ Resources
 
 [^1]: This image is by micro:bit Educational Foundation at [www.microbit.org](www.microbit.org).
 
-[^2]: Microbit telegraph activity <https://www.microbit.co.uk/td/lessons/telegraph/activity>  
+[^2]: Microbit telegraph activity <https://makecode.microbit.org/projects/telegraph/make>  
