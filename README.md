@@ -31,52 +31,52 @@ Anthony & Cigdem
 Outline
 -------
 
--[**Connecting micro:bits with wires**](wiredcommunication/)  
+-[**Connecting micro:bits with wires**](wiredcommunication/wiredcommunication.md)  
     This chapter is an introduction and a fun demonstration of networking. Micro:bits can communicate
     when connected with wires. Via wires, you will send images between micro:bits.
 
--[**Broadcast communication: One to all**](broadcast/)  
+-[**Broadcast communication: One to all**](broadcast/broadcast.md)  
     You will start using radio communication in this chapter and learn about broadcast communication.
     With broadcast communication, one micro:bit can send messages to many other micro:bits. But, be
     cautious! If all micro:bits do that, it’s like everyone is speaking at once.
 
--[**Group communication: One to many**](groupcommunication/)
+-[**Group communication: One to many**](groupcommunication/groupcommunication.md)
     By forming small groups, you will send to and receive from a limited number of micro:bits. This is more
     manageable than broadcast. But, selecting a unique identifier for your group will be an interesting
      challenge.
 
--[**Game 1: Shakey Donkey**](shakeydonkey/)
+-[**Game 1: Shakey Donkey**](shakeydonkey/shakeydonkey.md)
     This is a game that uses the micro:bit radio. See whether you can figure out how to play the game,
     and how it works.
 
--[**Unicast Communication: One to One**](unicast/)
+-[**Unicast Communication: One to One**](unicast/unicast.md)
     Broadcast and group communication are fun. But sometimes you want to talk to only one person.
     This is called unicast communication. To do this, you discover that you will need a unique identifier
     for your micro:bit.
 
--[**Two-way Unicast**](twowayunicast/)
+-[**Two-way Unicast**](twowayunicast/twowayunicast.md)
     It’s no use talking with somebody if you don’t get a response back. In this chapter, you will program
     your micro:bit to send a message and to get a reply. Also, you will work out how long it takes for a
     reply to come back. Doing this, you will also program one of the most important tools used in the
     Internet: Ping.
 
--[**Game 2: Rock-Paper-Scissors over Radio**](rockpaperscissors/)  
+-[**Game 2: Rock-Paper-Scissors over Radio**](rockpaperscissors/rockpaperscissors.md)  
     This is not like the traditional Rock-Paper-Scissors game. It
     works over the radio!
 
--[**Handling errors: Retransmissions**](retransmissions/)
+-[**Handling errors: Retransmissions**](retransmissions/retransmissions.md)
      Nothing is perfect, not even radio communication. What happens if
     your message gets lost on the way? In this chapter, you will test
     methods for dealing with message loss. For instance, does it help if
     you send your messages more than once?
 
--[**Handling errors: Acknowledgements**](acknowledgements/)
+-[**Handling errors: Acknowledgements**](acknowledgements/acknowledgements.md)
     It’s a waste to retransmit if the other side already received the message! The receiver needs a
     standard reply (or an acknowledgement) to avoid this. At the sending side, if you do not receive an
     acknowledgement, you can assume that your message wasn’t received. In this chapter, you will test
     how well acknowledgments work to improve reliability.
 
--[**Game 3: Battleship over Radio**](battleship/)
+-[**Game 3: Battleship over Radio**](battleship/battleship.md)
     You have come far. Now you are ready for another classic game!
     You will write a version of the famous Battleship game using
     your micro:bits. Your experience with radio communication and
