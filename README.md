@@ -31,7 +31,7 @@ Anthony & Cigdem
 Outline
 -------
 
--[**Connecting micro:bits with wires**](wiredcommunication/)  
+-[**Connecting micro:bits with wires**](wiredcommunication/wiredcommunication.md)  
     This chapter is an introduction and a fun demonstration of networking. Micro:bits can communicate
     when connected with wires. Via wires, you will send images between micro:bits.
 
