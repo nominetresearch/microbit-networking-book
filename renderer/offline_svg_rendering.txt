@@ -1,0 +1,21 @@
+(work-in-progress for offline rendering)
+
+simplest possible example for turning text into SVG (the code is "basic")
+https://makecode.microbit.org/--docs?type=renderblocks&if=foo&code=basic&lang=en&render=1
+
+
+"hello world" example
+https://makecode.microbit.org/--docs?type=renderblocks&if=foo&code=basic.showString(%22Hello%20world%22)&lang=en&render=1
+
+NB need to URL-encode the javascript
+
+CURL incantation:
+  curl -d "type=renderblocks&id=foo&lang=en&render=1&code=basic" -X GET "https://makecode.microbit.org/--docs"
+  
+... but still need it rendered by a browser to get the .svg
+
+- could use phantomjs??
+- could use google-chrome --headless etc
+
+TODO how to extract SVG with all the styling?
+

@@ -1,0 +1,17 @@
+
+# once-off:
+
+# install gitbook-cli(TODO put it somewhere else, or do a -g install in docker)
+$ npm install gitbook-cli 
+
+# install whatever's necessary to render, based on plugins/themes etc in book.json
+# (re-run this if that changes)
+$ ./node_modules/.bin/gitbook install
+
+# run local webserver
+$ ./node_modules/.bin/gitbook serve
+
+# render to static
+# (generates ./_book/ including e.g. ./_book/index.html)
+$ ./node_modules/.bin/gitbook build
+

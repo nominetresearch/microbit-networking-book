@@ -1,0 +1,13 @@
+{
+  "title": "Networking with the micro:bit",
+
+    "plugins": [ "github" , "-sharing", "pxt"],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/GitbookIO/plugin-github"
+        },
+        "pxt": {
+            "base": "makecode.microbit.org"
+        }
+    } 
+}
