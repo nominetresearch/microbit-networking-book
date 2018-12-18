@@ -1,0 +1,13 @@
+{
+  "title": "Networking with the micro:bit",
+  
+    "plugins": [ "github" , "-sharing", "pxt", "image-captions"],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/nominetresearch/microbit-networking-book"
+        },
+        "pxt": {
+            "base": "makecode.microbit.org"
+        }
+    } 
+}

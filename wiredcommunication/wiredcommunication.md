@@ -3,7 +3,7 @@ Communication over Wires
 
 ![Chapter 1 image](chapter1.png)
 
-Introduction
+Introduction {#id_intro}
 ------------
 
 Everything is connected nowadays! Computers and devices connect to each other to form networks. And these networks connect to
@@ -20,14 +20,14 @@ connect two micro:bits. Doing this, you will learn:
 
 - the concept of a *network*
 
-### What you’ll need?
+### What you’ll need? {#id_wyn}
 
     2 micro:bits
     4 crocodile clip leads
     1 battery holder, and 2 AAA batteries
     1 teammate
 
-Background
+Background {#id_background}
 ----------
 
 For two micro:bits to be able to send messages to each other, they
@@ -85,7 +85,7 @@ massive network of networks!
 In this chapter, you will create a network of two micro:bits, connected
 via wires.
 
-Programming: A Simple Heart Transfer
+Programming: A Simple Heart Transfer {#id_prog_sht}
 ------------------------------------
 
 In this section, you will connect two micro:bits via wires.
@@ -98,7 +98,7 @@ micro:bit display [^1].
 This activity is best done with a teammate. In the following, you will go
 through four tasks to program your micro:bits.
 
-### Task 1: Watch the “Simple Heart Transfer”
+### Task 1: Watch the “Simple Heart Transfer” {#id_task1}
 
 **Description:** We have created a video to show how your connections
 and program should work in this activity.
@@ -110,7 +110,7 @@ See the video at [Simple Heart Transfer](https://microbit.nominetresearch.uk/net
 task. It will help you to test whether the files you downloaded for Task 2
 work. It will also help you to write your program for this chapter.**
 
-### Task 2: Connect your micro:bits and test telegraph
+### Task 2: Connect your micro:bits and test telegraph {#id_task2}
 
 **Description:** You will connect your micro:bits using wires, and use
 a program to check the connections. You can follow the instructions below, or
@@ -134,9 +134,31 @@ on each micro:bit and check that the LED illuminates on the other one. You will 
 *Pins* menu. This menu is under *Advanced*. Click on the *More* link to
 see all the options.
 
-![Telegraph program. Pressing button A sends a signal to the other side using Pin 1. The receiver micro:bit listens on Pin 2 to check if a signal is received. If there is a signal, it lights up the (2,2) pixel on the display.](Telegraph.png)
+```blocks
+let signal = 0
+input.onButtonPressed(Button.A, function () {
+    pins.digitalWritePin(DigitalPin.P1, 1)
+    basic.pause(100)
+    pins.digitalWritePin(DigitalPin.P1, 0)
+})
+basic.forever(function () {
+    signal = pins.digitalReadPin(DigitalPin.P2)
+    if (signal == 1) {
+        led.plot(2, 2)
+    } else {
+        led.unplot(2, 2)
+    }
+})
+```
 
-### Task 3: Test “Simple Heart Transfer” Hex files
+TODO: previous image presented as well for comparison
+TODO: make alt tag / image captions work!
+
+![Telegraph program. Pressing button A sends a signal to the other side using Pin 1. The receiver micro:bit listens on Pin 2 to check if a signal is received. If there is a signal, it lights up the (2,2) pixel on the display.](Telegraph.png "TODO here is some example text")
+
+
+
+### Task 3: Test “Simple Heart Transfer” Hex files {#id_task3}
 
 **Description:** We provided two files, named [microbit1\_wired\_simpleheart\_secret.hex](microbit1\_wired\_simpleheart\_secret.hex) and
 [microbit2\_wired\_simpleheart\_secret.hex](microbit2\_wired\_simpleheart\_secret.hex) in this folder,
@@ -149,7 +171,7 @@ micro:bits. There are two different hex files for micro:bit 1 and
 micro:bit 2. Test the program by tilting your micro:bits and checking
 when the heart icon is displayed.
 
-### Task 4: Program a heart transfer
+### Task 4: Program a heart transfer {#id_task4}
 
 **Description:** In this task, you will program your micro:bits to get a
 similar behaviour to what you observed in the Tasks 2 and 3. To do this
@@ -185,14 +207,14 @@ Program your micro:bit 2 so that:
 2. When tilted over micro:bit 1, it sends a pulse to micro:bit 2 over
     the correct pin.
 
-Extended activity
+Extended activity {#id_extended_activity}
 -----------------
 
 1. Watch the [Wired\_pixel\_by\_pixel\_heart.m4v](https://microbit.nominetresearch.uk/networking-book/pixel_heart_transfer.html). Based on this video, discuss with your teammate how you can send more complex data across wires. Make a proposal and discuss with others.
 
 2. Watch the two videos under the Resources section. How are they related to your activity? Discuss.
 
-Problems
+Problems {#id_problems}
 --------
 
 1. What is a bit?
@@ -205,7 +227,7 @@ Problems
 
 5. How are the bits in your program sent over the wire in your program?
 
-Resources
+Resources {#id_resources}
 ---------
 
 - Video: What is the Internet (Code.org) -   <https://youtu.be/Dxcc6ycZ73M>
