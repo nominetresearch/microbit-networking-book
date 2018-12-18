@@ -1,0 +1,31 @@
+FROM centos:7
+
+# yum update
+RUN yum update -y
+
+# basic installation
+RUN yum -y install epel-release
+RUN yum install -y npm
+
+# we're done with yum 
+RUN yum clean all && rm -rf /var/cache/yum
+
+# gitbook install
+# (allow global npm install in docker :-)
+RUN npm install -g gitbook-cli
+
+#RUN mkdir -p /gitbook_build/
+#RUN (cd /gitbook_build && 
+
+#COPY start_snmpd.sh /
+#RUN chmod 755 /start_snmpd.sh
+#COPY snmpd.conf /etc/snmp/snmpd.conf
+#COPY WiPipe.sh /
+#RUN chmod 755 /WiPipe.sh
+
+ENV RUNNING_IN_DOCKER Yes
+
+
+#EXPOSE 161
+
+#ENTRYPOINT ["/start_snmpd.sh"]
