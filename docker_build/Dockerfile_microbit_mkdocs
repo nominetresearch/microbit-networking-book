@@ -1,0 +1,32 @@
+FROM fedora:29
+
+# yum update
+RUN dnf update -y
+
+# basic installation
+#RUN dnf -y install epel-release
+
+#RUN yum install -y python34-pip.
+RUN dnf install -y python2-pip
+
+# we're done with yum 
+#RUN yum clean all && rm -rf /var/cache/yum
+
+# mkdocs install
+RUN pip install --upgrade pip
+#RUN pip install mkdocs
+
+## do a blank install: we'll need to install again when we've got book.json
+## (expect gitbook directory loaded into /shared)
+#RUN mkdir /shared
+#RUN (cd /shared/ && gitbook install)
+
+# entrypoint script
+#COPY build.sh /
+#RUN chmod 755 /build.sh
+
+
+ENV RUNNING_IN_DOCKER Yes
+
+
+#ENTRYPOINT ["/build.sh"]
