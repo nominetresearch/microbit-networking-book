@@ -52,19 +52,19 @@ appears on your display to get rid of it. So, first thing to do is to
 program what your micro:bit should do “On shake”. This is shown in
 the  figure below.
 
-![Part 1 of the Shakey Donkey game](ShakeyDonkey_part1.png)
+![Part 1 of the Shakey Donkey game](ShakeyDonkey_part1_new.png)
 
 Notice that, in this first part, your program sends a number. So, you
 need a piece of code for handling a received number. This second part is
 shown in the next figure. Add it to your JavaScript Blocks editor program.
 
-![Part 2 of the Shakey Donkey game<](ShakeyDonkey_part2.png)
+![Part 2 of the Shakey Donkey game](ShakeyDonkey_part2_new.png)
 
 The third part, shown in the next figure, handles the
 case when the button A is pressed. This part of the program decides
 whether you won or not. Add this part into your program too.
 
-![Part 3 of the Shakey Donkey game](ShakeyDonkey_part3.png)
+![Part 3 of the Shakey Donkey game](ShakeyDonkey_part3_new.png)
 
 Download the program into your micro:bits. Play the Shakey Donkey game
 with your teammate. Then, go through the problems to explain how your
