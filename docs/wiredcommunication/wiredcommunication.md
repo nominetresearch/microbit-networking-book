@@ -151,10 +151,7 @@ basic.forever(function () {
 })
 ```
 
-TODO: previous image presented as well for comparison
-TODO: make alt tag / image captions work!
-
-![Telegraph program. Pressing button A sends a signal to the other side using Pin 1. The receiver micro:bit listens on Pin 2 to check if a signal is received. If there is a signal, it lights up the (2,2) pixel on the display.](Telegraph.png)
+![Telegraph program. Pressing button A sends a signal to the other side using Pin 1. The receiver micro:bit listens on Pin 2 to check if a signal is received. If there is a signal, it lights up the (2,2) pixel on the display.](Telegraph_new.png)
 
 ### Task 3: Test “Simple Heart Transfer” Hex files
 
