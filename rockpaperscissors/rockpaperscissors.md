@@ -112,7 +112,7 @@ the game is only played when both *selected* and *received* are *True*. Once you
 After you program the game, play it with your teammate! Who
 wins more often?
 
-![Rock paper scissors: A template for programming the rules](RockPaperScissors_rules.png)
+![Rock paper scissors: A template for programming the rules](RockPaperScissors_incomplete_code.png)
 
 Exercises
 ---------
