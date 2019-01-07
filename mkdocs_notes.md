@@ -1,9 +1,17 @@
+## mkdocs notes for micro:bit networking book
 
-- can't use `$ dnf install mkdocs` - not very recent
-- need to use pip install :-(
-- TODO set up docker install
+- package available  
+`$ dnf install mkdocs`  
+but this isn't very recent
 
-- move everything to ./docs (seems to be an absolute requirement!)
+- install with pip  
+```pip install --user mkdocs```
+
+directory structure:
+
+- need to move everything to ./docs (seems to be an absolute requirement!)
+- output document gets generated in ./site
+
 - `(cd .. && mkdocs new microbit-networking-book)`
 - `mkdocs serve`
 

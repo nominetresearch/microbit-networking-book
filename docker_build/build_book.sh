@@ -12,15 +12,15 @@ mkdir -p exported_source/ || exit 1
 rm -rf exported_source/docker_build
 
 echo "running docker build"
-#docker run --rm  --volume=`pwd`/exported_source:/shared:z microbit-mkdocs
+docker run --rm  --volume=`pwd`/exported_source:/shared:z microbit-mkdocs
 
-docker run --rm -i -t --entrypoint=  --volume=`pwd`/exported_source:/shared:z microbit-mkdocs bash
+#docker run --rm -i -t --entrypoint=  --volume=`pwd`/exported_source:/shared:z microbit-mkdocs bash
 
 # TODO set permissions / generate RPM
 
-#echo "generating tarfile (NB tarbomb)"
-#rm -f microbit_book.tgz
-#(cd exported_source/_book && tar cfz ../../microbit_book.tgz *)
-#
+echo "generating tarfile (NB tarbomb)"
+rm -f microbit_book.tgz
+(cd exported_source/site && tar cfz ../../microbit_book.tgz *)
+
 #echo "cleanup"
 #rm -rf exported_source/
