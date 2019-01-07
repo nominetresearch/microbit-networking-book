@@ -134,7 +134,7 @@ on each micro:bit and check that the LED illuminates on the other one. You will 
 *Pins* menu. This menu is under *Advanced*. Click on the *More* link to
 see all the options.
 
-![Telegraph program. Pressing button A sends a signal to the other side using Pin 1. The receiver micro:bit listens on Pin 2 to check if a signal is received. If there is a signal, it lights up the (2,2) pixel on the display.](Telegraph.png)
+![Telegraph program. Pressing button A sends a signal to the other side using Pin 1. The receiver micro:bit listens on Pin 2 to check if a signal is received. If there is a signal, it lights up the (2,2) pixel on the display.](Telegraph_new.png)
 
 ### Task 3: Test “Simple Heart Transfer” Hex files
 
