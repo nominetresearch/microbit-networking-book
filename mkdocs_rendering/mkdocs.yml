@@ -11,6 +11,8 @@ extra_javascript: [embed.js]
 
 # link to github source
 repo_url: https://github.com/nominetresearch/microbit-networking-book
+# need a custom edit URI because we've got /docs in a non-standard place
+edit_uri: blob/master/
 
 # TODO copyright
 #copyright:
