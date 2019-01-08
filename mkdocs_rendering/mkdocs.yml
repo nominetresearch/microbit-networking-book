@@ -1,0 +1,39 @@
+site_name: "Networking with the micro:bit"
+
+theme: readthedocs
+
+# PXT block rendering - see https://github.com/Microsoft/pxt-mkdocs-sample
+#libs: jquery
+extra_javascript: [embed.js]
+
+# not needed (we only have absolute links outside this mkdocs project)
+#site_url: https://microbit.nominetresearch.uk/
+
+# link to github source
+repo_url: https://github.com/nominetresearch/microbit-networking-book
+# need a custom edit URI because we've got /docs in a non-standard place
+edit_uri: blob/master/
+
+# TODO copyright
+#copyright:
+
+# TODO look at extensions (could be useful)
+# https://python-markdown.github.io/extensions/
+#markdown_extensions
+
+nav:
+- 'Introduction': 'README.md'
+- 'Connecting micro:bits with wires': wiredcommunication/wiredcommunication.md
+- 'Broadcast communication': broadcast/broadcast.md
+- 'Group communication': groupcommunication/groupcommunication.md
+- 'Game 1: Shakey Donkey': shakeydonkey/shakeydonkey.md
+- 'Unicast Communication: One to One': unicast/unicast.md
+- 'Two-way Unicast': twowayunicast/twowayunicast.md
+- 'Game 2: Rock-Paper-Scissors over Radio': rockpaperscissors/rockpaperscissors.md
+- 'Handling errors: Retransmissions': retransmissions/retransmissions.md
+- 'Handling errors: Acknowledgements': acknowledgements/acknowledgements.md
+- 'Game 3: Battleship over Radio': battleship/battleship.md
+- About:
+  - 'Acknowledgements': thankyou.md
+  - 'Licence': licence.md
+
