@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 # system update
 RUN apt-get update
-RUN apt-get upgrade
+RUN apt-get -y upgrade
 
 # python pip
 RUN apt install -y python-pip
