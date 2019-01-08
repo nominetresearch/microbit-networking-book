@@ -1,11 +1,10 @@
 site_name: "Networking with the micro:bit"
 
+theme: readthedocs
 
 # PXT block rendering - see https://github.com/Microsoft/pxt-mkdocs-sample
-libs: jquery
+#libs: jquery
 extra_javascript: [embed.js]
-
-theme: readthedocs
 
 # not needed (we only have absolute links outside this mkdocs project)
 #site_url: https://microbit.nominetresearch.uk/
