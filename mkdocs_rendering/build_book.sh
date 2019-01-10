@@ -20,7 +20,7 @@ docker run --rm  --volume=`pwd`/exported_source:/shared:z microbit-mkdocs
 
 echo "generating tarfile (NB tarbomb)"
 rm -f microbit_book.tgz
-(cd exported_source/mkdocs_rendering/site && tar cfz ../../../microbit_book.tgz *)
+(cd exported_source/mkdocs_rendering/site && tar cfz ../../../microbit_networking_online.tgz *)
 
 #echo "cleanup"
 #rm -rf exported_source/
