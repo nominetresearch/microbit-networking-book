@@ -155,8 +155,8 @@ basic.forever(function () {
 
 ### Task 3: Test “Simple Heart Transfer” Hex files
 
-**Description:** We provided two files, named [microbit1\_wired\_simpleheart\_secret.hex](microbit1\_wired\_simpleheart\_secret.hex) and
-[microbit2\_wired\_simpleheart\_secret.hex](microbit2\_wired\_simpleheart\_secret.hex) in this folder,
+**Description:** We provided two files, named [microbit1\_wired\_simpleheart\_secret.hex](microbit1_wired_simpleheart_secret.hex) and
+[microbit2\_wired\_simpleheart\_secret.hex](microbit2_wired_simpleheart_secret.hex) in this folder,
 for you to test how the final program should work. These files will run
 on your micro:bits, but you will not be able to display the code using
 the JavaScript Blocks editor.
@@ -231,6 +231,6 @@ Resources
 
 - BBC Bitesize, Introducing Binary - <http://www.bbc.co.uk/education/guides/zwsbwmn/revision>
 
-[^1]: This image is by micro:bit Educational Foundation at [www.microbit.org](www.microbit.org).
+[^1]: This image is by micro:bit Educational Foundation at [www.microbit.org](https://www.microbit.org).
 
 [^2]: Microbit telegraph activity <https://makecode.microbit.org/projects/telegraph/make>  
