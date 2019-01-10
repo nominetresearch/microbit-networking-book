@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get -y upgrade
 
 # python pip
-RUN apt install -y python-pip
+RUN apt-get install -y python-pip
 
 # we're done with package install
 RUN rm -rf /var/lib/apt/lists/*
