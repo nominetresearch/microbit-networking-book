@@ -45,7 +45,7 @@ if [ "$BUILD_NUMBER" == "" ]; then
 	echo "not running in CI; unofficial RPM"
 	export BUILD_VERSION="unofficial.git${GIT_HASH_SHORT}"
 else
-	export BUILD_VERSION="${BUILD_NUMBER}git${GIT_HASH_SHORT}"
+	export BUILD_VERSION="${BUILD_NUMBER}.git${GIT_HASH_SHORT}"
 fi
 
 echo "BUILD_VERSION=$BUILD_VERSION"
