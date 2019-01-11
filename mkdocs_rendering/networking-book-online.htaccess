@@ -1,0 +1,8 @@
+# force download of .hex files as attachments
+# (see also /etc/httpd/conf.d/networking-book-online.conf)
+
+<FilesMatch "\.(?i:hex)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
+

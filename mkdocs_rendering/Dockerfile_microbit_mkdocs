@@ -1,0 +1,28 @@
+FROM ubuntu:18.04
+
+# system update
+RUN apt-get update
+RUN apt-get -y upgrade
+
+# python pip
+RUN apt-get install -y python-pip
+
+# we're done with package install
+RUN rm -rf /var/lib/apt/lists/*
+
+# mkdocs install
+RUN pip install --upgrade pip
+RUN pip install mkdocs
+
+# (expect mkdocs source loaded into /shared)
+RUN mkdir /shared
+
+# entrypoint script
+COPY build.sh /
+RUN chmod 755 /build.sh
+
+
+ENV RUNNING_IN_DOCKER Yes
+
+
+ENTRYPOINT ["/build.sh"]
