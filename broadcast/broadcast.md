@@ -201,10 +201,10 @@ Resources
 ---------
 
 - BBC Bitesize, The electromagnetic spectrum -
-    <http://www.bbc.co.uk/schools/gcsebitesize/science/edexcel/electromagnetic_spectrum/electromagneticspectrumrev1.shtml>
+    <https://www.bbc.com/bitesize/guides/z32f4qt/revision/1>
 
 - BBC Bitesize, An introduction to waves -
-    <http://www.bbc.co.uk/schools/gcsebitesize/science/aqa_pre_2011/radiation/anintroductiontowavesrev2.shtml>
+    <https://www.bbc.com/bitesize/guides/zgf97p3/revision/1>
 
 - Video: How does Wi-Fi Work? (Brit Lab) -
     <https://youtu.be/xmabFJUKMdg>
