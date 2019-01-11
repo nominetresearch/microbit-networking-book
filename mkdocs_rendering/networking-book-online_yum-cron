@@ -1,7 +1,0 @@
-# auto-update this RPM
-SHELL=/bin/bash
-PATH=/sbin:/bin:/usr/sbin:/usr/bin
-MAILTO=root
-
-*/5 * * * * root yum update -y microbit-networking-online  >> /var/log/microbit-networking-online_yum-cron.log 2>&1
-
