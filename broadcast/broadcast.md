@@ -177,15 +177,7 @@ sending which message?
 
 **Instruction:** Program your micro:bit so that it can send a number
 when you press the button A and a string if you press button B. Extend
-your receiver program so that you can receive either a string or a
-number. For this, you will use a neat trick for the “on radio received”
-block. Pressing the little settings button on the block brings up a
-menu. This menu will allow you to drag additional values under Packet
-block. You will notice that the original “on radio received” block will
-extend to show these additional values.
-The figure below shows how the trick works.
-
-![Making micro:bit radio to receive either a string or a number.](advanced_radio.png)
+your receiver program so that you can receive and display ten numbers.
 
 Extended activity
 -----------------
