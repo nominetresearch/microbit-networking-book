@@ -132,7 +132,7 @@ broadcast address. This is like tuning into the correct channel to
 receive a TV broadcast.
 
 **Instruction:** Program your receiver micro:bit’s group ID to 0. This
-is the group ID used in the example broadcast sender programs [^3]. For
+is the group ID used in the example broadcast sender programs [^2]. For
 this, use the code block for setting the radio group in the JavaScript Blocks editor. It’s under
 the Radio menu, as shown in the figure below. You can
 learn about the radio blocks in more detail at
