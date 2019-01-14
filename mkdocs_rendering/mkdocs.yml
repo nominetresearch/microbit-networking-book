@@ -17,7 +17,7 @@ edit_uri: blob/master/
 # TODO copyright
 #copyright:
 
-# TODO look at extensions (could be useful)
+# TODO look at other extensions (could be useful)
 # https://python-markdown.github.io/extensions/
 markdown_extensions:
   - footnotes
