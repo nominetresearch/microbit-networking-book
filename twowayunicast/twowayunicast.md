@@ -13,7 +13,7 @@ commonly used tool to check if computers are still connected to the
 Internet.
 
 This chapter will build on the learnings from
-[Unicast Communication: One to One](../unicast). The new ideas are:
+[Unicast Communication: One to One](../unicast/unicast.md). The new ideas are:
 
 - The idea of 2-way communication (*bidirectional communication*)
 
@@ -34,8 +34,9 @@ Background
 *Bidirectional communication* enables two-way communication between two
 computers.
 
-*Definition 1* \[Bidirectional communication\] This is a communications mode in which
-data is transmitted in both directions but not at the same time.
+!!! hint "Definition 1: _Bidirectional communication_"
+	This is a communications mode in which
+	data is transmitted in both directions but not at the same time.
 
 In the previous chapter, your micro:bits had clear roles: there was a
 sender and a receiver. In bidirectional communication, either of the
@@ -43,9 +44,9 @@ micro:bits can send and receive messages. This way, it becomes possible
 to create two-way protocols. In these protocols, when a computer sends a
 message, it waits for a certain response to its message.
 
-*Definition 2* \[Ping\] Ping is an example of a two-way protocol. It is widely used in
-the Internet to test whether a networked computer is on and connected
-OK.
+!!! hint "Definition 2: _Ping_"
+	Ping is an example of a two-way protocol. It is widely used in
+	the Internet to test whether a networked computer is on and connected OK.
 
 Ping program sends a *Ping* message to test whether computers are OK. It
 expects this message to be echoed back, for example with a *Pong*
@@ -57,8 +58,9 @@ takes a long time before the sender receives a *Pong* response.
 So, Ping program measures the *round-trip-time* between the two
 computers to point out these problems.
 
-*Definition 3* \[Round-trip-time (RTT)\] Round-trip-time is the time it takes for a
-message to go from a sender to a receiver and back again.
+!!! hint "Definition 3: _Round-trip-time (RTT)_"
+	Round-trip-time is the time it takes for a
+	message to go from a sender to a receiver and back again.
 
 In other words, the sender measures the difference in time when it sent
 the *Ping* and when it received the *Pong*.  
@@ -69,6 +71,12 @@ The figure below shows the relationship between,
 *Ping*, *Pong*, and round-trip-time.
 
 ![Round-trip-time. Micro:bit 1 sends a *Ping* message to Micro:bit 2 at *Time\_send*. The Micro:bit 2 responds with a *Pong* message. Micro:bit 1 receives the *Pong* message at *Time\_receive*. The difference between these two times, *Time\_receive* and *Time\_send* is the round-trip-time.](Ping-rtt.png)
+
+!!! note ""
+	**Figure 1:** Round-trip-time. Micro:bit 1 sends a *Ping* message to 
+	Micro:bit 2 at *Time\_send*. The Micro:bit 2 responds with a *Pong* message. 
+	Micro:bit 1 receives the *Pong* message at *Time\_receive*. The difference 
+	between these two times, *Time\_receive* and *Time\_send* is the round-trip-time.
 
 Besides round-trip-time (RTT), the Ping program reports statistical
 information. Figure below shows an example output as a result of
@@ -85,14 +93,22 @@ The average RTT (shown as *avg*) is 10.184 ms.
 
 ![The output of running ping to send four messages to *www.google.com*. The <http://ping.eu/ping> online program reports round-trip time and a statistical summary of the results.](PingGoogle.png)
 
+!!! note ""
+	**Figure 2:** The output of running ping to send four messages to *www.google.com*. 
+	The <http://ping.eu/ping> online program reports round-trip time and a 
+	statistical summary of the results.
+
 With a micro:bit, to calculate the round-trip-time of your messages, you
 will use the *running time* variable.
 
-*Definition 3* \[micro:bit running time\] A variable that keeps record of how long has
-passed since the micro:bit was turned on or reset (measured in
-milliseconds).
+!!! hint "Definition 3: _micro:bit running time_"
+	A variable that keeps record of how long has passed since the micro:bit was
+	turned on or reset (measured in milliseconds).
 
 ![PXT running time](PXTRunningTime.png)
+
+!!! note ""
+	**Figure 3:** MakeCode running time
 
 In the rest of this chapter, you will use the running time variable to
 calculate the round-trip time. It will be very useful to record the time
@@ -112,11 +128,11 @@ complete four tasks.
 ### Task 1: Prepare for unicast
 
 **Description:** Ping uses unicast between the sender and the receiver
-micro:bits. Look at your notes for [Unicast Communication: One to One](../unicast)  and your
+micro:bits. Look at your notes for [Unicast Communication: One to One](../unicast/unicast.md)  and your
 unicast program to remember how to do unicast.
 
 **Instruction:** Start with using the unicast program you have written for
-[Unicast Communication: One to One](../unicast) as a basis. In this program, decide which
+[Unicast Communication: One to One](../unicast/unicast.md) as a basis. In this program, decide which
 micro:bit is going send the *Pings*, and which micro:bit is going to
 respond with *Pongs*. Set the address variables based on your decision.
 Design your message header, *Ping* packet, and *Pong* packet.
@@ -156,9 +172,15 @@ questions:
 Exercises
 ---------
 
-1. Extend your Ping program to send automatically more than one *Ping* message. Test it with 10 *Pings*. Calculate the average round-trip time of these Ping messages.
+!!! attention "Exercise 1"
+	Extend your Ping program to send automatically more than one *Ping* message. 
+	Test it with 10 *Pings*. Calculate the average round-trip time of these Ping messages.
 
-2. The Ping program reports the round-trip-time. What if you wanted to calculate the time the message took one-way? Is it possible to calculate one-way times? In other words, is it possible to calculate how long it takes to send a message from the sender to the receiver? How long the messages take from the receiver to the sender?
+!!! attention "Exercise 2"
+	The Ping program reports the round-trip-time. What if you wanted to calculate 
+	the time the message took one-way? Is it possible to calculate one-way times? 
+	In other words, is it possible to calculate how long it takes to send a message 
+	from the sender to the receiver? How long the messages take from the receiver to the sender?
 
 Problems
 --------
