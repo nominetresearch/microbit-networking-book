@@ -39,11 +39,12 @@ string like “Hello”, a number like “9”, or an icon image. The
 micro:bits convert each message to a signal to send it over the
 *communications medium*.
 
-*Definition 1* \[Communications medium\] A communication medium is the physical path
-over which a signal is transmitted.
+!!! hint "Definition 1: _Communications medium_"
+	A communication medium is the physical path over which a signal is transmitted.
 
-*Definition 2* \[Signal\] Signals are the electromagnetic voltages or waves transmitted
-on a physical wired or wireless medium.
+!!! hint "Definition 2: _Signal_"
+	Signals are the electromagnetic voltages or waves transmitted
+	on a physical wired or wireless medium.
 
 For example, take the case when we say “Hello” into a landline
 telephone. The telephone handset converts the sounds into an
@@ -51,16 +52,18 @@ electrical voltage signal. Then, this signal is transmitted to the
 receiving telephone by wires; and at the receiver, it is converted back
 into sound.
 
-**Exercise 1: What is the wireless physical medium that makes radio communication
-possible?**
+!!! attention "Exercise 1"
+	What is the wireless physical medium that makes radio communication
+	possible?
 
 Computers, and also your micro:bit, cannot process signals without
 converting them to binary data: 0s and 1s. Also, the binary data
 processed by computers need to be converted into signals before they can
 travel a communication medium.
 
-*Definition 3* \[Bit\] A bit is the smallest unit of data in a computer. It is like an
-atom. A bit can be either a 1 or a 0.
+!!! hint "Definition 3: _Bit_"
+	A bit is the smallest unit of data in a computer. It is like an
+	atom. A bit can be either a 1 or a 0.
 
 A group of 8 bits is a *byte*. Table \[tab:bit\] shows other example
 groupings.
@@ -76,11 +79,12 @@ groupings.
 By connecting computers or any device through different communications
 mediums, we create networks.
 
-*Definition 4* \[Network\] A computer network is a collection of computers or devices,
-which are connected to communicate with each other. In a computer
-network, there is at least two computers. Two or more networks can
-connect to form a larger network: a network of networks. Internet is a
-massive network of networks!
+!!! hint "Definition 4: _Network_"
+	A computer network is a collection of computers or devices,
+	which are connected to communicate with each other. In a computer
+	network, there is at least two computers. Two or more networks can
+	connect to form a larger network: a network of networks. Internet is a
+	massive network of networks!
 
 In this chapter, you will create a network of two micro:bits, connected
 via wires.
@@ -94,6 +98,9 @@ The figure below shows how a heart icon should look like on the
 micro:bit display [^1].
 
 ![Micro:bit displaying a heart icon.](microbit-heart-blue.png)
+
+!!! note ""
+	**Figure 1.1:** Micro:bit displaying a heart icon
 
 This activity is best done with a teammate. In the following, you will go
 through four tasks to program your micro:bits.
@@ -129,6 +136,11 @@ must make the same connections).
 
 ![Wiring micro:bits.Two of the wires connect straight(3V-to-3V and GND-to-GND) but the other two cross over (1-to-2 and 2-to-1).](Microbit_wired.png)
 
+!!! note ""
+	**Figure 1.2:** Wiring micro:bits. Two of the wires connect straight
+	(3V-to-3V and GND-to-GND) but the other two cross over (1-to-2 and 2-to-1)
+
+
 To test, use the program from the figure showing the Telegraph program; press button A
 on each micro:bit and check that the LED illuminates on the other one. You will use the blocks from the
 *Pins* menu. This menu is under *Advanced*. Click on the *More* link to
@@ -151,7 +163,11 @@ basic.forever(function () {
 })
 ```
 
-![Telegraph program. Pressing button A sends a signal to the other side using Pin 1. The receiver micro:bit listens on Pin 2 to check if a signal is received. If there is a signal, it lights up the (2,2) pixel on the display.](Telegraph_new.png)
+!!! note ""
+	**Figure 1.3:** Telegraph program. Pressing button A sends a signal to the 
+	other side using Pin 1. The receiver micro:bit listens on Pin 2 to check 
+	if a signal is received. If there is a signal, it lights up the (2,2) pixel 
+	on the display.
 
 ### Task 3: Test “Simple Heart Transfer” Hex files
 
@@ -205,9 +221,11 @@ Program your micro:bit 2 so that:
 Extended activity
 -----------------
 
-1. Watch the [Wired\_pixel\_by\_pixel\_heart.m4v](https://microbit.nominetresearch.uk/networking-book/pixel_heart_transfer.html). Based on this video, discuss with your teammate how you can send more complex data across wires. Make a proposal and discuss with others.
+!!! attention "Exercise 2"
+	Watch the [Wired\_pixel\_by\_pixel\_heart.m4v](https://microbit.nominetresearch.uk/networking-book/pixel_heart_transfer.html). Based on this video, discuss with your teammate how you can send more complex data across wires. Make a proposal and discuss with others.
 
-2. Watch the two videos under the Resources section. How are they related to your activity? Discuss.
+!!! attention "Exercise 3"
+	Watch the two videos under the Resources section. How are they related to your activity? Discuss.
 
 Problems
 --------

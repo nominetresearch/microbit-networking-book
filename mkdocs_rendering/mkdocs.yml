@@ -2,6 +2,7 @@ site_name: "Networking with the micro:bit"
 
 theme: readthedocs
 
+  
 # PXT block rendering - see https://github.com/Microsoft/pxt-mkdocs-sample
 #libs: jquery
 extra_javascript: [embed.js]
@@ -20,7 +21,8 @@ edit_uri: blob/master/
 # TODO look at other extensions (could be useful)
 # https://python-markdown.github.io/extensions/
 markdown_extensions:
-  - footnotes
+- footnotes
+- admonition
 
 nav:
 - 'Introduction': 'README.md'

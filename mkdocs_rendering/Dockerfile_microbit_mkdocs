@@ -13,6 +13,7 @@ RUN rm -rf /var/lib/apt/lists/*
 # mkdocs install
 RUN pip install --upgrade pip
 RUN pip install mkdocs
+#RUN pip install mkdocs-material
 
 # (expect mkdocs source loaded into /shared)
 RUN mkdir /shared
