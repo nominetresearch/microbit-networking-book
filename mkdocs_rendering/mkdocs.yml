@@ -25,7 +25,7 @@ markdown_extensions:
 - admonition
 
 nav:
-- 'Introduction': 'README.md'
+- 'Introduction': index.md
 - 'Connecting micro:bits with wires': wiredcommunication/wiredcommunication.md
 - 'Broadcast communication': broadcast/broadcast.md
 - 'Group communication': groupcommunication/groupcommunication.md
