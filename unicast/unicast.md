@@ -35,11 +35,13 @@ Background
 
 This chapter covers unicast communication. So, what is unicast?
 
-*Definition 1* \[Unicast\] Transmission of a message to a single receiver.
+!!! hint "Definition 1: _Unicast_"
+	Transmission of a message to a single receiver.
 
 When transmitting messages to each other, computers use *protocols*.
 
-*Definition 2* \[Protocol\] A set of rules for how messages are sent across networks.
+!!! hint "Definition 2: _Protocol_"
+	A set of rules for how messages are sent across networks.
 
 Simply, protocols define how computers should send messages and what
 they should do when they receive a message. On the Internet, every
@@ -50,10 +52,11 @@ called an *IP address*. Remember you have already used special addresses
 for broadcast and multicast. In this chapter, we consider unicast
 addresses. *IP address* is used for unicast on the Internet.
 
-*Definition 3* \[IP address\] A unique string that identifies computers that use the
-Internet Protocol  to communicate over a network. This string is made up
-of 4 decimal numbers, that range between 0 and 255. Each decimal is
-separated by dots. For example, 213.248.234.11 is an IP address.
+!!! hint "Definition 3: _IP address_"
+	A unique string that identifies computers that use the
+	Internet Protocol  to communicate over a network. This string is made up
+	of 4 decimal numbers, that range between 0 and 255. Each decimal is
+	separated by dots. For example, 213.248.234.11 is an IP address.
 
 Your micro:bit also has an address (but it is a bit different). You
 already partly changed your micro:bit’s address, by changing the group
@@ -62,12 +65,16 @@ ID.
 When two computers communicate, the sender sends a data packet  to the
 receiver.
 
-*Definition 4* \[Data packet\] A data packet is a piece of data sent over a network.
-This piece of data has an actual message part (for example, an image or
-a text) and one or more header parts. A header contains helpful
-information for protocols like the sender and receiver IP addresses.
+!!! hint "Definition 4: _Data packet_" 
+	A data packet is a piece of data sent over a network.
+	This piece of data has an actual message part (for example, an image or
+	a text) and one or more header parts. A header contains helpful
+	information for protocols like the sender and receiver IP addresses.
 
 ![A data packet contains a message and a header. A header contains information to help a protocol such as sender and receiver addresses, and message types. Different protocols may add different headers to a message.](Datapacket.png)
+
+!!! note ""
+	**Figure 1:** A data packet contains a message and a header. A header contains information to help a protocol such as sender and receiver addresses, and message types. Different protocols may add different headers to a message.
 
 The figure above shows how the data and one header forms a data
 packet. In this figure, as well as the sender and receiver addresses,
@@ -99,7 +106,7 @@ envelopes with your name on.
 broadcast as the underlying communication.
 
 **Instruction:** Set your radio group ID like you did in
-[Broadcast Communication: One to All](../broadcast).
+[Broadcast Communication: One to All](../broadcast/broadcast.md).
 
 ### Task 2: Design your header
 
@@ -121,10 +128,13 @@ unique across all the addresses of micro:bits that are in the same room
 with you.**
 
 Next, join the strings for sender and receiver addresses to create a
-header. You will use the blocks under the *Text* menu in the JavaScript Blocks editor
+header. You will use the blocks under the *Text* menu in the MakeCode Blocks editor
 shown in the figure below. Create your header using the blocks in this menu.
 
 ![Text menu in PXT](TextMenuinPXT.png)
+
+!!! note ""
+	Text menu in the MakeCode Blocks editor
 
 ### Task 3: Create your packet and send
 
@@ -183,12 +193,15 @@ whitelist.
 Extended activity
 -----------------
 
-1. You may have written two separate programs: one for the receiver and one for the sender. Change your program so that both micro:bits can send and receive.
+!!! attention "Exercise 1"
+	You may have written two separate programs: one for the receiver and one for the sender. Change your program so that both micro:bits can send and receive.
 
-2. Did you try listening out for messages sent from other micro:bits in your class? How could your program achieve this? Is this the right thing to do? How might you protect your messages from others snooping?
+!!! attention "Exercise 2"
+	Did you try listening out for messages sent from other micro:bits in your class? How could your program achieve this? Is this the right thing to do? How might you protect your messages from others snooping?
 
-3. In this chapter, we have covered one way to do a unicast: Putting sender and receiver addresses in a data packet header. But there is another way. Remember [Group communication: one to many](../groupcommunication). If you set your group to be
-only for your pair of micro:bits, then this is like you are unicasting. To unicast like this, choose a unique group ID, like you did for group communication. Announce it on the board so that no one else uses it. Write programs for your pair of micro:bits that send and receive using this radio group ID. What are the limitations of doing unicast like this? **Hint: Think about how many possible group IDs there are. Would this be enough for everyone in the world who has a micro:bit?**
+!!! attention "Exercise 3"
+	In this chapter, we have covered one way to do a unicast: Putting sender and receiver addresses in a data packet header. But there is another way. Remember [Group communication: one to many](../groupcommunication/groupcommunication.md). If you set your group to be
+	only for your pair of micro:bits, then this is like you are unicasting. To unicast like this, choose a unique group ID, like you did for group communication. Announce it on the board so that no one else uses it. Write programs for your pair of micro:bits that send and receive using this radio group ID. What are the limitations of doing unicast like this? **Hint: Think about how many possible group IDs there are. Would this be enough for everyone in the world who has a micro:bit?**
 
 Problems
 --------
