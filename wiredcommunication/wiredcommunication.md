@@ -100,7 +100,7 @@ micro:bit display [^1].
 ![Micro:bit displaying a heart icon.](microbit-heart-blue.png)
 
 !!! note ""
-	**Figure 1.1:** Micro:bit displaying a heart icon
+	**Figure 1:** Micro:bit displaying a heart icon
 
 This activity is best done with a teammate. In the following, you will go
 through four tasks to program your micro:bits.
@@ -137,7 +137,7 @@ must make the same connections).
 ![Wiring micro:bits.Two of the wires connect straight(3V-to-3V and GND-to-GND) but the other two cross over (1-to-2 and 2-to-1).](Microbit_wired.png)
 
 !!! note ""
-	**Figure 1.2:** Wiring micro:bits. Two of the wires connect straight
+	**Figure 2:** Wiring micro:bits. Two of the wires connect straight
 	(3V-to-3V and GND-to-GND) but the other two cross over (1-to-2 and 2-to-1)
 
 
@@ -164,7 +164,7 @@ basic.forever(function () {
 ```
 
 !!! note ""
-	**Figure 1.3:** Telegraph program. Pressing button A sends a signal to the 
+	**Figure 3:** Telegraph program. Pressing button A sends a signal to the 
 	other side using Pin 1. The receiver micro:bit listens on Pin 2 to check 
 	if a signal is received. If there is a signal, it lights up the (2,2) pixel 
 	on the display.
