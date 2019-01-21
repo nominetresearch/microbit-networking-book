@@ -15,8 +15,8 @@ repo_url: https://github.com/nominetresearch/microbit-networking-book
 # need a custom edit URI because we've got /docs in a non-standard place
 edit_uri: blob/master/
 
-# TODO copyright
-#copyright:
+# copyright gets printed at bottom of page
+copyright: "Copyright &copy; 2017-2019 Nominet"
 
 # TODO look at other extensions (could be useful)
 # https://python-markdown.github.io/extensions/
