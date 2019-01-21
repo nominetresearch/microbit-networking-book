@@ -37,6 +37,6 @@ nav:
 - 'Handling errors: Acknowledgements': acknowledgements/acknowledgements.md
 - 'Game 3: Battleship over Radio': battleship/battleship.md
 - About:
-  - 'Acknowledgements': thankyou.md
-  - 'Licence': licence.md
+  - 'Acknowledgements': about/thankyou.md
+  - 'Licence': about/licence.md
 
