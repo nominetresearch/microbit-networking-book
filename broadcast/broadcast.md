@@ -42,8 +42,9 @@ words, the signals from the WiFi routers can be heard by other WiFi
 devices tuned into the same radio frequency. Read more about frequency
 in the Further Reading section at the end.
 
-*Definition 1* \[Broadcast\] In networking, broadcast communication means the message
-of a single sender is transmitted to all receivers in a network.
+!!! hint "Definition 1: _Broadcast_"
+	In networking, broadcast communication means the message
+	of a single sender is transmitted to all receivers in a network.
 
 But, does this mean that broadcast is only possible with wireless
 communications? No, but it is more cumbersome. For instance, in wired
@@ -53,8 +54,9 @@ all the wires.
 Finally, receivers may refuse to receive broadcast messages if they are
 not labeled with a *broadcast address*.
 
-*Definition 2* \[Broadcast address\] A broadcast address is a special address which
-says all devices in the network should receive this message.
+!!! hint "Definition 2: _Broadcast address_"
+	A broadcast address is a special address which
+	says all devices in the network should receive this message.
 
 In a micro:bit, the broadcast address can be configured by setting the
 group ID of micro:bit’s radio. All the micro:bits need to have the same
@@ -71,6 +73,9 @@ shows the electromagnetic spectrum, and the different electromagnetic
 waves.
 
 ![Electromagnetic spectrum](EM.png)
+
+!!! note ""
+	**Figure 1:** Electromagnetic spectrum
 
 One thing to notice in the figure that radio waves are within the
 frequencies 30 KHz and 300 GHz in the electromagnetic spectrum. Radio
@@ -95,6 +100,10 @@ wavelength is meters. The figure below shows an example of a
 wavelength[^1].
 
 ![Wavelength](wavelength.png)
+
+!!! note ""
+	**Figure 2:** Wavelength
+
 
 Frequency and wavelength are related. The relationship between frequency
 and wavelength is given by a formula: 
@@ -133,12 +142,16 @@ receive a TV broadcast.
 
 **Instruction:** Program your receiver micro:bit’s group ID to 0. This
 is the group ID used in the example broadcast sender programs [^2]. For
-this, use the code block for setting the radio group in the JavaScript Blocks editor. It’s under
+this, use the code block for setting the radio group in the MakeCode JavaScript Blocks editor. It’s under
 the Radio menu, as shown in the figure below. You can
 learn about the radio blocks in more detail at
 <https://makecode.microbit.org/reference/radio>.
 
-![Setting the Radio group in PXT.](RadioSetGroup.png)
+![Setting the Radio group in MakeCode.](RadioSetGroup.png)
+
+!!! note ""
+	**Figure 3:** Setting the Radio group in MakeCode
+
 
 ### Task 2: Receive a broadcast message
 
@@ -182,9 +195,11 @@ your receiver program so that you can receive and display ten numbers.
 Extended activity
 -----------------
 
-1. Extend your program in Task 2 for receiving a string. Display a “Sad” face on your micro:bit’s display until you receive a “Hello” message. Then display a “Happy” face for 2 seconds.
+!!! attention "Exercise 1"
+	Extend your program in Task 2 for receiving a string. Display a “Sad” face on your micro:bit’s display until you receive a “Hello” message. Then display a “Happy” face for 2 seconds.
 
-2. Discuss some issues with broadcast communication. Is it always useful or necessary to send messages to everybody? What about privacy? Is this a problem that everybody receives all messages?
+!!! attention "Exercise 2"
+	Discuss some issues with broadcast communication. Is it always useful or necessary to send messages to everybody? What about privacy? Is this a problem that everybody receives all messages?
 
 Problems
 --------
