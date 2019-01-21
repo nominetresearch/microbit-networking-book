@@ -23,6 +23,9 @@ Figure below shows these rules.
 
 ![Rock paper scissors game: Rock beats Scissors. Scissors beats Paper. Paper beats Rock.](Rock-paper-scissors.jpg)
 
+!!! note ""
+	**Figure 1:** Rock paper scissors game: Rock beats Scissors. Scissors beats Paper. Paper beats Rock
+
 In this chapter, you will program this game using your micro:bits. Doing
 so, you will practice:
 
@@ -68,7 +71,7 @@ selection and send it over the radio. Like in Task 1, use paper=0, rock=1, sciss
 
 1. Use button A to select paper, rock or scissors. Each time you press button A, it should alternately show an icon of either paper, rock or scissors.
 
-2. Use button B to confirm your selection, and unicast it to your friend’s micro:bit over the radio like you did in [Unicast Communication: One to One](../unicast).
+2. Use button B to confirm your selection, and unicast it to your friend’s micro:bit over the radio like you did in [Unicast Communication: One to One](../unicast/unicast.md).
 
 3. Add code for receiving a number. When you receive a number, show the corresponding icon  on the display. For example, if you received 0, display the paper icon. 
 
@@ -91,6 +94,9 @@ is a happy face. Using the rules of the game, fill the rest of the table.
 
 ![Rock paper scissors table<](IncompleteRockPaperScissorsTable.png)
 
+!!! note ""
+	**Figure 2:** Incomplete rock, paper, scissors table
+	
 ### Task 4: Play the game
 
 **Description:** Once you filled the table, you need to decide how to
@@ -103,7 +109,7 @@ program these rules in your code. Your program will:
 **Instruction:** Figure below shows a
 template for programming the table using the *if* block in the JavaScript Blocks editor
 *Logic* menu. Note that this is just a template and it is there to give
-you an idea of the structure of your program. For instance, your *on radio received* block will have to be different to do unicast communication (see [Unicast Communication: One to One](../unicast)).
+you an idea of the structure of your program. For instance, your *on radio received* block will have to be different to do unicast communication (see [Unicast Communication: One to One](../unicast/unicast.md)).
 
 You will notice in the template that we used two variables: *selected* and *received*.
 *selected* is set to *True* when you make the selection for your hand by pressing button B. *received* is set to *True* when you receive your opponent’s hand. In the *forever* block,
@@ -112,12 +118,57 @@ the game is only played when both *selected* and *received* are *True*. Once you
 After you program the game, play it with your teammate! Who
 wins more often?
 
-![Rock paper scissors: A template for programming the rules](RockPaperScissors_incomplete_code.png)
+```blocks
+let my_hand = 0
+let selected = false
+input.onButtonPressed(Button.B, function () {
+    selected = true
+    radio.sendNumber(my_hand)
+})
+```
+```blocks
+let opponent_hand = 0
+let received = false
+radio.onReceivedNumber(function (receivedNumber) {
+    received = true
+    opponent_hand = receivedNumber
+})
+```
+```blocks
+let my_hand = 0
+let opponent_hand = 0
+let received = false
+let selected = false
+basic.forever(function () {
+    if (selected == true && received == true) {
+        selected = false
+        received = false
+        if (opponent_hand == my_hand) {
+            basic.showIcon(IconNames.Surprised)
+        } else {
+            if (my_hand == 0 && opponent_hand == 1) {
+                basic.showIcon(IconNames.Happy)
+            } else if (0 == 0) {
+            	
+            } else if (0 == 0) {
+            	
+            } else {
+            	
+            }
+        }
+    }
+})
+```
 
+!!! note ""
+	**Figure 3:** Rock paper scissors: A template for programming the rules
+	
 Exercises
 ---------
 
-How might you expand your program to play rock/paper/scissors/lizard/spock? To learn more about this extension check the website: [http://www.samkass.com/theories/RPSSL.html](http://www.samkass.com/theories/RPSSL.html).
+!!! attention "Exercise 1"
+	How might you expand your program to play rock/paper/scissors/lizard/spock? 
+	To learn more about this extension check the website: [http://www.samkass.com/theories/RPSSL.html](http://www.samkass.com/theories/RPSSL.html).
 
 Problems
 --------
