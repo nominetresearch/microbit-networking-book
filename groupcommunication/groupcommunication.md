@@ -51,7 +51,7 @@ address*.
 	which says all devices in the group should receive this message.
 
 To set a group address (or group ID), you will again use the “radio set group”
-block under the Radio menu like in [Broadcast communication:One to all](../broadcast). The main challenge of this chapter is creating the groups for communication. How do computers learn about and join these groups?
+block under the Radio menu like in [Broadcast communication:One to all](../broadcast/broadcast.md). The main challenge of this chapter is creating the groups for communication. How do computers learn about and join these groups?
 What happens when they leave a group? In this chapter, you will have a chance to think about these questions when you experiment with creating groups.
 
 ### **Further reading**
