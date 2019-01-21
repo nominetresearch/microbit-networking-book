@@ -39,22 +39,24 @@ other is saying!
 
 Another reason for a wireless error may be *radio interference*. This is
 because wireless communication is broadcast (remember
-[Wireless and Broadcast Communication](../broadcast)). This means that there may be many
+[Wireless and Broadcast Communication](../broadcast/broadcast.md)). This means that there may be many
 broadcasters, and their transmissions may collide at the receivers.
 These broadcasters *interfere* with each other.
 
-*Definition 1* \[Interference\] In wireless communications, interference is any other
-signal that disrupts a signal as it travels to its destination.
+!!! hint "Definition 1: _Interference_"
+	In wireless communications, interference is any other
+	signal that disrupts a signal as it travels to its destination.
 
 Imagine, in a classroom, when everybody is talking at the same time. You
 will miss half of the things your friend says. Other people’s signals
 interfere with your friend’s signal on its way to you. In networking,
 this is a packet loss.
 
-*Definition 2* \[Packet loss\] Packet loss happens when one or more data packets
-traveling in a computer network do not reach their destination. Packet
-loss is measured as the ratio of packets lost and the packets sent (see
-Equation below).
+!!! hint "Definition 2: _Packet loss_"
+	Packet loss happens when one or more data packets
+	traveling in a computer network do not reach their destination. Packet
+	loss is measured as the ratio of packets lost and the packets sent (see
+	Equation below).
 
 *Packet loss* = (*Packets lost*)/(*Packets sent*)
 
@@ -62,15 +64,17 @@ Also, if there is too much interference, you may receive messages
 incorrectly! For instance, you may hear “Bat!” when your friend is
 shouting “Cat!”. In networking, this is a packet error. Packet errors are measured as packet error rates.
 
-*Definition 3* \[Packet error rate \] Packet error rate is the ratio of packets that have been received with
-one or more errors and the packets sent.
+!!! hint "Definition 3: _Packet error rate_"
+	Packet error rate is the ratio of packets that have been received with
+	one or more errors and the packets sent.
 
 *Packet error rate* = (*Packets with errors*)(*Packets sent*)
 
 In this chapter, we will cover one simple method to handle these errors, *retransmissions*, where the sender automatically retransmits messages multiple times to increase the
 chance of reception.
 
-*Definition 4* \[Retransmissions\] Retransmissions mean sending messages many times.
+!!! hint "Definition 4: _Retransmissions_"
+	Retransmissions mean sending messages many times.
 
 In the Figure below, let’s assume the sender knows that
 the communications medium loses half of its packets. In other words, the
@@ -81,10 +85,15 @@ number of retransmissions is 1.
 
 ![Retransmissions may increase message success. In the example, the sender sends each message twice by default. So, even if the first “Hello” failed, the second “Hello” was received by the receiver!](Retransmissions.png)
 
+!!! note ""
+	**Figure 1:** Retransmissions may increase message success. 
+	In the example, the sender sends each message twice by default. So, even if 
+	the first “Hello” failed, the second “Hello” was received by the receiver!
+
 It is common to use retransmissions combined with another method. For
 instance, senders may choose retransmit only when they are sure there
 has been an error. We will explore this option in the next chapter,
-[Handling errors: Acknowledgements](../acknowledgements).
+[Handling errors: Acknowledgements](../acknowledgements/acknowledgements.md).
 
 Programming: Retransmissions
 ----------------------------
@@ -107,14 +116,17 @@ means the packet error rate is 0.2 or 20%.
 
 ![Error radio custom blocks](ErrorRadio.png)
 
+!!! note ""
+	**Figure 2:** Error radio custom blocks
+
 **Instruction** To use the custom blocks in the JavaScript Blocks editor, import the
 ErrorRadio.hex file in this folder. With your teammate,
 decide who will have the sender micro:bit, and who will have the
-receiver micro:bit. Follow the approach in [Unicast Communication: One to One](../unicast)
+receiver micro:bit. Follow the approach in [Unicast Communication: One to One](../unicast/unicast.md)
 to put sender and receiver address in your packets.
 You may copy and
 change one of the programs you have written for
-[Unicast Communication: One to One](../unicast)
+[Unicast Communication: One to One](../unicast/unicast.md)
  to use the *ErrorRadio* blocks.
 
 Write a small sender program that sends a number with an error. Download it
@@ -208,16 +220,16 @@ Run each experiment three times each, for different retransmission values and fi
 Extended activity
 -----------------
 
-1. Based on your experiments, discuss with your teammate how the increase in retransmissions helps. In your discussion, answer the following questions:
+!!! attention "Exercise 1"
+	Based on your experiments, discuss with your teammate how the increase in 
+	retransmissions helps. In your discussion, answer the following questions:
+	
+	- How does the infromation loss improve as you increase the number of retransmissions?
+	- Does the method guarantee all messages are received at least once?
+	- How would you improve your method?
 
-- How does the infromation loss improve as you increase the number of
-    retransmissions?
-
-- Does the method guarantee all messages are received at least once?
-
-- How would you improve your method?
-
-2.Imagine you are going to survey packet loss in different locations inside a room using two micro:bits. Write a receiver and a sender program to measure packet loss. What do you observe? How does the packet loss change in different locations?
+!!! attention "Exercise 2"
+	Imagine you are going to survey packet loss in different locations inside a room using two micro:bits. Write a receiver and a sender program to measure packet loss. What do you observe? How does the packet loss change in different locations?
 
 Problems
 --------
