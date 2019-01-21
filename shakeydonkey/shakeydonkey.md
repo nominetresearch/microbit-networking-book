@@ -45,26 +45,72 @@ Donkey game given to you in three parts in the
 the following figures.
 
 **Instruction:** To set your groups, repeat the activity from
-[Group communication: One to Many](../groupcommunication). Make sure your group IDs are unique!
+[Group communication: One to Many](../groupcommunication/groupcommunication.md). Make sure your group IDs are unique!
 
 The game is played by shaking your micro:bit each time the donkey
 appears on your display to get rid of it. So, first thing to do is to
 program what your micro:bit should do “On shake”. This is shown in
 the  figure below.
 
-![Part 1 of the Shakey Donkey game](ShakeyDonkey_part1_new.png)
+```blocks
+let caught = 0
+let me = 0
+input.onGesture(Gesture.Shake, function () {
+    if (caught != 0) {
+        me += input.runningTime() - caught
+        basic.clearScreen()
+        basic.pause(Math.randomRange(0, 2000))
+    }
+    radio.sendNumber(me)
+})
+```
+!!! note ""
+	Shakey Donkey program - Part 1: Shake your micro:bit to send your reaction time.
 
 Notice that, in this first part, your program sends a number. So, you
 need a piece of code for handling a received number. This second part is
 shown in the next figure. Add it to your JavaScript Blocks editor program.
 
-![Part 2 of the Shakey Donkey game](ShakeyDonkey_part2_new.png)
+```blocks
+let you = 0
+let caught = 0
+radio.onReceivedNumber(function (receivedNumber) {
+    caught = input.runningTime()
+    you += receivedNumber
+    basic.showLeds(`
+        . . . . #
+        . # # # .
+        # # # # .
+        . # . # .
+        . # . # .
+        `)
+})
+```
+!!! note ""
+	Shakey Donkey program - Part 2: Receive the other player’s reaction time, and display the donkey.
 
 The third part, shown in the next figure, handles the
 case when the button A is pressed. This part of the program decides
 whether you won or not. Add this part into your program too.
 
-![Part 3 of the Shakey Donkey game](ShakeyDonkey_part3_new.png)
+```blocks
+let caught = 0
+let you = 0
+let me = 0
+input.onButtonPressed(Button.A, function () {
+    if (me > you) {
+        basic.showIcon(IconNames.Sad)
+    } else {
+        basic.showIcon(IconNames.Happy)
+    }
+    me = 0
+    you = 0
+    caught = 0
+})
+```
+
+!!! note ""
+	Shakey Donkey program - Part 3: Press button A to learn the result.
 
 Download the program into your micro:bits. Play the Shakey Donkey game
 with your teammate. Then, go through the problems to explain how your
