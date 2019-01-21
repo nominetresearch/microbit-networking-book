@@ -39,14 +39,16 @@ from. This is called group communication. Group communication is used in
 the Internet to send to many people at the same time. For example,
 Internet television and videoconferencing use group communication.
 
-*Definition 1* \[Group communication\] In group communication or multicast, a message
-is sent only to the computers in the group.
+!!! hint "Definition 1: _Communications medium_"
+	In group communication or multicast, a message
+	is sent only to the computers in the group.
 
 For this, the messages need to be labeled with a *group* or *multicast
 address*.
 
-*Definition 2* \[Group address\] A group or multicast address is a special address
-which says all devices in the group should receive this message.
+!!! hint "Definition 2: _Group address_"
+	A group or multicast address is a special address
+	which says all devices in the group should receive this message.
 
 To set a group address (or group ID), you will again use the “radio set group”
 block under the Radio menu like in [Broadcast communication:One to all](../broadcast). The main challenge of this chapter is creating the groups for communication. How do computers learn about and join these groups?
@@ -72,6 +74,9 @@ it really equal to 255? For further reading, see the BBC Bitesize,
 Binary revision page in the Resources section.
 
 ![Binary representation of group IDs.](BinaryAddress.png)
+
+!!! note ""
+	**Figure 1:** Binary representation of group IDs
 
 Programming: Creating groups and messaging within groups
 --------------------------------------------------------
@@ -112,9 +117,11 @@ messages.
 Extended activity
 -----------------
 
-1. How easy or difficult would it be if micro:bits could create groups automatically themselves? How would they pick a group ID? How would they make sure nobody else had that number? Would broadcast be useful? Discuss with your teammates.
+!!! attention "Exercise 1"
+	How easy or difficult would it be if micro:bits could create groups automatically themselves? How would they pick a group ID? How would they make sure nobody else had that number? Would broadcast be useful? Discuss with your teammates.
 
-2. Can a micro:bit be part of two groups or more? How would you program your micro:bit to do that?
+!!! attention "Exercise 2"
+	Can a micro:bit be part of two groups or more? How would you program your micro:bit to do that?
 
 Problems
 --------
