@@ -84,7 +84,7 @@ Outline
 
 Let’s start!
 
-[^1] The CPU on the micro:bit is a Nordic Semiconductor nRF51822 and contains a built-in 2.4GHz radio module. This radio can be configured to run Bluetooth Low Energy
+[^1]: The CPU on the micro:bit is a Nordic Semiconductor nRF51822 and contains a built-in 2.4GHz radio module. This radio can be configured to run Bluetooth Low Energy
 (BLE) protocol but in this book, we will use the simpler micro:bit to micro:bit communication.
 
-[^2] This version of the book uses JavaScript Blocks Editor; we are also working on a MicroPython version.
+[^2]: This version of the book uses JavaScript Blocks Editor; we are also working on a MicroPython version.
