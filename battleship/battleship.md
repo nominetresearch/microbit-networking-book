@@ -13,6 +13,9 @@ War 1 with pencil and paper[^1]. A plastic board game was released in
 
 ![Battleship board](Battleship_game_board.png)
 
+!!! note ""
+	**Figure 1:** Battleship board
+
 Let's look at how this game works using the example board in the figure above.  
 In this example, each player uses their own 10x10 board, and each player's fleet includes
 10 ships of different sizes (the grey rectangles). The figure shows the placement for one of the players: 4
@@ -28,9 +31,9 @@ record each hit and miss to decide which shot to fire next.
 
 To program the Battleship into your micro:bits, you will use your networking knowledge. This
 game requires unicast and bidirectional communication, which you worked
-on in [Unicast Communication: One to One](../unicast) and [Two way unicast](../twowayunicast). If you program
+on in [Unicast Communication: One to One](../unicast/unicast.md) and [Two way unicast](../twowayunicast/twowayunicast.md). If you program
 the variant in Exercises, you will use information from
- [Handling errors: Retransmissions](../retransmissions) and [Handling errors: Acknowledgements](../acknowledgements). 
+ [Handling errors: Retransmissions](../retransmissions/retransmissions.md) and [Handling errors: Acknowledgements](../acknowledgements/acknowledgements.md). 
 In summary, you
 will practice:
 
@@ -82,6 +85,9 @@ y is the row number. For more information, see
 
 ![Battleship in micro:bit.](Battleship_microbit.png)
 
+!!! note ""
+	**Figure 2:** Battleship in micro:bit
+
 Button A will be used to select the column number and button B will be
 used to select the row number. Then to fire a shot to (2,3), you will
 need to press button A twice, and press button B three times, and press both buttons A and button B together.  To check your understanding, discuss with your
@@ -106,6 +112,9 @@ players have 5 ships placed in the battle area.
 
 ![Battleship game: Initial stage with randomly placed ships.](Initial.jpg)
 
+!!! note ""
+	**Figure 3:** Battleship game: Initial stage with randomly placed ships.
+
 The attacker (on the left) presses button A three times, and button B
 once. Pressing both buttons at the same fires a shot, and sends a
 shot message over the radio for the position (3,1). There is a ship on
@@ -114,7 +123,10 @@ figure below, the leftmost LED in the top row of the
 attacker’s micro:bit lights up. And, in the opponent’s display the LED in
 the position (3,1) gets turned off, because this ship was sunk.
 
-![Battleship game: Success! You hit a ship!.](Hit.jpg)
+![Battleship game: Success! You hit a ship!](Hit.jpg)
+
+!!! note ""
+	**Figure 4:** Battleship game: Success! You hit a ship!
 
 Let’s also look at a miss situation (see
 the figure below). In this case, nothing should change on
@@ -122,6 +134,9 @@ the opponent’s board. But, in the attacker’s display, in the top row,
 the rightmpst LED lights up to show a miss.
 
 ![Battleship game: An unfortunate miss!](Miss.jpg)
+
+!!! note ""
+	**Figure 5:** Battleship game: An unfortunate miss!
 
 Programming: Battleship
 -----------------------
@@ -208,20 +223,28 @@ Extended Activity
 Battleship game has many variations. See the Wikipedia site in Resources
 to read about the variations.
 
-1. One variation allows players to keep it secret that a ship has been sunk. So, their opponent has to take further shots to confirm that an area is clear. This is like having a packet loss! Remember how you dealt with packet losses in [Handling errors: Retransmissions](../retransmissions) and [Handling errors: Acknowledgements](../acknowledgements). How would you apply those concepts to this case? Discuss possible solutions with your friend. Then, program and test your new solution.
+!!! attention "Exercise 1"
+	One variation allows players to keep it secret that a ship has been sunk. So, their opponent has to take further shots to confirm that an area is clear. This is like having a packet loss! Remember how you dealt with packet losses in [Handling errors: Retransmissions](../retransmissions/retransmissions.md) and [Handling errors: Acknowledgements](../acknowledgements/acknowledgements.md). How would you apply those concepts to this case? Discuss possible solutions with your friend. Then, program and test your new solution.
 
-2. Imagine a variant when it takes 3 hits to sink a ship instead of 1 hit. How would your program change? Do you need to make changes on the sender side or the receiver side? How similar is this to using default retransmissions in [Handling errors: Retransmissions](../retransmissions)?
+!!! attention "Exercise 2"
+	Imagine a variant when it takes 3 hits to sink a ship instead of 1 hit. How would your program change? Do you need to make changes on the sender side or the receiver side? How similar is this to using default retransmissions in [Handling errors: Retransmissions](../retransmissions/retransmissions.md)?
 
 Problems
 --------
 
 ![Battleship game: A random battle area](Example_init.png)
 
-1. The figure above shows randomly placed ships in a battle area. Which coordinates do you need to send to hit all the ships?
+!!! note ""
+	**Figure 6:** Battleship game: A random battle area
+
+**Problem 1:** The figure above shows randomly placed ships in a battle area. Which coordinates do you need to send to hit all the ships?
 
 ![Battleship game: Two players](Two_microbits_sidebyside.png)
 
-2. The figure above shows randomly placed ships in the battle areas of two micro:bits. Table below lists all the shots that are fired from the micro:bit 1 (left/red micro:bit) and micro:bit 2
+!!! note ""
+	**Figure 7:** Battleship game: Two players
+
+**Problem 2:** The figure above shows randomly placed ships in the battle areas of two micro:bits. Table below lists all the shots that are fired from the micro:bit 1 (left/red micro:bit) and micro:bit 2
 (right/yellow micro:bit). Who wins?
 
 | **Rounds** | **Micro:bit 1** | **Micro:bit2** | **Result** |
@@ -234,7 +257,7 @@ Problems
 | 6 | (2,2) | (0,3) | |
 | 7 | (3,2) | (1,4) | |
 
-3. If you wanted to play this game with another opponent, what do you need
+If you wanted to play this game with another opponent, what do you need
 to change in your program?
 
 [^1]: Battleship in Wikipedia: [https://en.wikipedia.org/wiki/Battleship_(game)](https://en.wikipedia.org/wiki/Battleship_(game))
