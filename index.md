@@ -22,6 +22,18 @@ Writing this book, we have assumed no knowledge of radio communications or netwo
 
 However, we assume that you have written programs with a micro:bit. For example, we expect that you are familiar with variables, if-then-else statements, and loops. The activities in each chapter will provide ample opportunity to put this knowledge into practice.
 
+Editions
+--------
+
+This is the online edition, available from Nominet Research's website at [https://microbit.nominetresearch.uk/networking-book-online/](https://microbit.nominetresearch.uk/networking-book-online/)
+
+A PDF version is available for [download](https://microbit.nominetresearch.uk/networking-book-pdf/networking_with_the_microbit.pdf)
+
+Printed copies are available on the micro:bit stand at BETT 2019, but if you can't get there then you can buy a printed copy from [Amazon.co.uk](https://www.amazon.co.uk/Networking-micro-bit-Anthony-Kirby/dp/1973396769) or [Amazon.com](https://www.amazon.com/Networking-micro-bit-Anthony-Kirby/dp/1973396769) (this is the cheapest & most efficient way for us to make printed copies available).
+
+
+
+
 About the authors
 -----------------
 
