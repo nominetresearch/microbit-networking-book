@@ -23,6 +23,8 @@ copyright: "Copyright &copy; 2017-2019 Nominet"
 markdown_extensions:
 - footnotes
 - admonition
+- toc:
+    permalink: True
 
 nav:
 - 'Introduction': index.md
