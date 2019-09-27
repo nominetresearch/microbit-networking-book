@@ -76,7 +76,7 @@ let you = 0
 let caught = 0
 radio.onReceivedNumber(function (receivedNumber) {
     caught = input.runningTime()
-    you += receivedNumber
+    you = receivedNumber
     basic.showLeds(`
         . . . . #
         . # # # .
