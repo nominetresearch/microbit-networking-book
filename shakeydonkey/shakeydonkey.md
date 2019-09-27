@@ -58,9 +58,9 @@ let me = 0
 input.onGesture(Gesture.Shake, function () {
     if (caught != 0) {
         me += input.runningTime() - caught
-        basic.clearScreen()
-        basic.pause(Math.randomRange(0, 2000))
     }
+    basic.clearScreen()
+    basic.pause(Math.randomRange(0, 2000))
     radio.sendNumber(me)
 })
 ```
