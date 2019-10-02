@@ -24,10 +24,7 @@ However, we assume that you have written programs with a micro:bit. For example,
 
 Editions
 --------
-
-This is the online edition, available from Nominet Research's website at [https://microbit.nominetresearch.uk/networking-book-online/](https://microbit.nominetresearch.uk/networking-book-online/)
-
-A PDF version is available for [download](https://microbit.nominetresearch.uk/networking-book-pdf/networking_with_the_microbit.pdf)
+A PDF version is available for [download](https://microbit.nominetresearch.uk/networking-book-pdf/networking_with_the_microbit.pdf).
 
 You can buy a printed copy from [Amazon.co.uk](https://www.amazon.co.uk/Networking-micro-bit-Anthony-Kirby/dp/1973396769) or [Amazon.com](https://www.amazon.com/Networking-micro-bit-Anthony-Kirby/dp/1973396769) (this is the cheapest & most efficient way for us to make printed copies available).
 
