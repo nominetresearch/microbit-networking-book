@@ -28,7 +28,7 @@ A PDF version is available for [download](https://microbit.nominetresearch.uk/ne
 
 You can buy a printed copy from [Amazon.co.uk](https://www.amazon.co.uk/Networking-micro-bit-Anthony-Kirby/dp/1973396769) or [Amazon.com](https://www.amazon.com/Networking-micro-bit-Anthony-Kirby/dp/1973396769) (this is the cheapest & most efficient way for us to make printed copies available).
 
-
+A [Spanish translation of 'Networking with the micro:bit'](https://programamos.es/microbit/) is also available.
 
 
 About the authors
